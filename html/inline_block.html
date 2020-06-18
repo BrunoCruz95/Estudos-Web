@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elemento inline, block e inline-block</title>
+    <meta charset="utf-8">
+    <style>
+        #principal{
+            width: 214px;
+        }
+        .borda {
+            border: 1px solid red;
+            /*COPORTAMENTO DO TIPO INLINE*/
+            display: inline;
+        }
+
+        .borda2 {
+            border: 1px solid blue;
+            display: block;
+            padding: 5px;
+            margin: 5px 5px 5px 0px;
+        }
+        .borda3{
+            /*inline-block só pula linha quando não cabe mais*/
+            border: 1px solid green;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--ELEMENTO BLOCK-->
+    <div id="principal">
+        <span class="borda2">Inline 1</span>
+        <span class="borda2">Inline 2</span>
+    </div>
+    
+    <h1 class="borda">Block 1</h1>
+    <h1 class="borda">Block 2</h1>
+    
+    <span class="borda3">Inline Block1</span>
+    <span class="borda3">Inline Block1</span>
+</body>
+
+</html>
