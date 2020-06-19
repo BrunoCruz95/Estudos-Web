@@ -1,2 +1,1 @@
-# Estudos com CSS3
-Você pode ver em  https://brunocruz95.github.io/Estudos-CSS3/
+# Estudos HTML5 CSS3 JS
