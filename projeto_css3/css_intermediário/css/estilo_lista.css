@@ -1,0 +1,533 @@
+/*
+//SELETOR UNIVERSAL
+* {
+    border: 1px ;
+}
+
+//SELETORES DE TEXTO
+h1{
+    color: green;
+}
+
+//CLASSE
+.azul{
+    color:blue;
+}
+p.azul{
+    color: blue;
+}
+
+//ID
+#cabecalho{
+    border: 1px solid black;
+}
+
+//SELETOR DE FILHO
+li>a{
+    color: red;
+    text-decoration: none;
+}
+
+//SELETOR DE DESCENDENTE
+div a{
+    color: green;
+}
+
+//SELETOR DE IRMÃO ADJACENTE
+h5+p{
+    color: red;
+}
+
+//SELETOR DE IRMÃO GERAL
+h6~p{
+    color: chocolate;
+}
+
+//HERANÇAS E ESPECIFICIDADE
+body{
+    color: red;
+    font-size: 15px;
+    border: 1px solid blue;
+}
+p{
+    color: blueviolet !important;
+}
+p{
+    color: red
+}
+
+//BARRA DE NAVEGAÇÃO VERTICAL
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding:5px 20px;
+    background: url('../img/seta.png') no-repeat left center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: url('../img/menu.png') no-repeat left bottom;
+}
+a:hover{
+    background-position: right bottom;
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url('../img/menu.png') no-repeat left bottom;
+}
+a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;   
+}
+#home #navegacao-vertical .home a,
+#noticias #navegacao-vertical .noticias a,
+#contato #navegacao-vertical .contato a,
+#servicos #navegacao-vertical .servicos a,
+#sobre #navegacao-vertical .sobre a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff; 
+}
+
+//BARRA DE NAVEGAÇÃO HORIZONTAL
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 560px;
+    background: #159cb0 url('../img/fundo-horizontal.png') repeat-x;
+    float: left;
+}
+ul li{
+    float: left;
+}
+ul a{
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    background: url('../img/divisor.png') repeat-y;
+}
+ul .primeiro a{
+    background: none;
+}
+ul a:hover{
+    color: #085662;
+    background: #44cae4;
+}
+#home .home a,
+#noticias .noticias a,
+#contato .contato a,
+#servicos .servicos a,
+#sobre .sobre a {
+    color: #085662;
+    background: #44cae4; 
+}
+
+// BARRA DE NAVEGAÇÃO COM ABAS
+body{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+ul li{
+    float: left;
+    background: url('../img/aba-direita.png') no-repeat top right;
+}
+li a{
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url('../img/aba-esquerda.png') no-repeat top left;
+    color: #fff;
+}
+ul a:hover{
+    color: #894a1f
+}
+ul #atual {
+    background: url('../img/aba-direita-atual.png') no-repeat top right;
+}
+ul #atual a{
+    background: url('../img/aba-esquerda-atual.png') no-repeat top left;
+}
+
+// LAYOUT LARGURA FIXO
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+#container{
+    width: 720px;
+    margin: 0 auto;
+    background: #fff;
+}
+#marca{
+    width: 720px;
+    background: #9E9E9E;
+    text-align: center;
+    line-height: 100px;
+}
+#conteudo{
+    width: 520px;
+    float: right;
+}
+#conteudo-principal{
+    width: 300px;
+    float: left;
+    padding: 10px;
+}
+#conteudo-secundario{
+    width: 180px;
+    float: right;
+    padding: 10px;
+}
+#navegacao{
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+#navegacao ul{
+    list-style: none;
+}
+#navegacao li a{
+    text-decoration: none;
+}
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+// LAYOUT LARGURA LIQUIDO NÃO É RESPONSIVO
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+#container{
+    width: 85%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 520px;
+    max-width: 900px;
+}
+#marca{
+    width: 100%;
+    height: 100px;
+    background: #9E9E9E;
+    text-align: center;
+    line-height: 100px;
+}
+#conteudo{
+    width: 75%;
+    float: right;
+}
+#conteudo-principal{
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+#conteudo-secundario{
+    width: 40%;
+    float: right;
+    padding: 10px;
+}
+#navegacao{
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+#navegacao ul{
+    list-style: none;
+}
+#navegacao li a{
+    text-decoration: none;
+}
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+// IMAGEM LIQUIDO
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+#container{
+    width: 85%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 520px;
+    max-width: 900px;
+}
+#marca{
+    width: 100%;
+    height: 200px;
+    background: #225992 url('../img/cabecalho2.jpg') no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+#conteudo{
+    width: 75%;
+    float: right;
+}
+#conteudo-principal{
+    width: 45%;
+    float: left;
+    padding: 10px;
+    background: #d1d1d1;
+}
+img.img-noticia {
+    width: 90%;
+    padding: 2%;
+    max-width: 600px;
+}
+#conteudo-secundario{
+    width: 40%;
+    float: right;
+    padding: 10px;
+    background: #d1d1d1;
+}
+#navegacao{
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+#navegacao ul{
+    list-style: none;
+}
+#navegacao li a{
+    text-decoration: none;
+}
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+// IMAGEM LIQUIDO
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+#container{
+    width: 930px;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 520px;
+    max-width: 900px;
+    background:  #fff url('../img/coluna.png') repeat-y left top;
+}
+#marca{
+    width: 100%;
+    height: 200px;
+    background: #225992 url('../img/cabecalho2.jpg') no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+#conteudo{
+    width: 75%;
+    float: right;
+}
+#conteudo-principal{
+    width: 45%;
+    float: left;
+    padding: 10px;
+    background: #d1d1d1;
+}
+img.img-noticia {
+    width: 90%;
+    padding: 2%;
+    max-width: 600px;
+}
+#conteudo-secundario{
+    width: 40%;
+    float: right;
+    padding: 10px;
+    background: #d1d1d1;
+}
+#navegacao{
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#navegacao ul{
+    list-style: none;
+}
+#navegacao li a{
+    text-decoration: none;
+}
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+// ESTILIZANDO TABELAS
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#tabela-01{
+    width: 600px;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 7px;
+}
+th{
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.2em;
+}
+tr.alternado{
+    background-color: #efefef;
+}
+.selecionado:hover{
+    background-color: #c3e6e5;
+}
+.numero {
+    text-align: right;
+}
+
+//ESTILIZANDO FORMULARIO 01
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+fieldset {
+    padding: 1em;
+    border: 1px solid #CCC;
+    background: #f8f8f8;
+    margin: 1em 0;
+}
+legend{
+    font-weight: bold;
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    width: 20em;
+}
+textarea{
+    width: 20em;
+    height: 10em;
+}
+input.radio, input.checkbox, input.submit{
+    width: auto;
+}
+.radio{
+    margin-right: 1em;
+}
+
+//ESTILIZANDO FORMULARIO 02
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #643d87 url('../img/fundo.jpg') no-repeat top center;
+}
+#container{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255,255,255,0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+#container img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+input{
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+input.email{
+    background-image: url('../img/icone-usuario.png');
+}
+input.senha{
+    background-image: url('../img/icone-cadeado.png');
+}
+input.submit{
+    color:#fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+}
+
+// ARREDONDAMENTO IMAGEM
+.caixa{
+    width: 400px;
+    background: #dedede url('../img/fundo-arredondamento.png') repeat-y;
+}
+.caixa h2{
+    padding: 10px 20px 0 20px;
+    background: url('../img/topo2.png') no-repeat left top;
+}
+.caixa p{
+    padding: 0 20px;
+}
+.caixa .ultimo{
+    background: url('../img/baixo2.png') no-repeat left bottom;
+    padding-bottom: 20px;
+}
+*/

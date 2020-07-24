@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Posicionamento Absoluto e Fixo</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+    /*relativo pra baixo, negativa pra cima*/
+        body {
+            background: #007fc7;
+        }
+        h1{
+            position: relative;
+        }
+        p{
+            width: 300px;
+        }
+        .relative{
+            border: 1px solid red;
+            padding: 10px;
+            position: relative;
+            top:20px;
+            left:80px;
+            /*TOP, RIGHT, BOTTOM, LEFT*/
+        }
+        .absolute{
+            border: 1px solid red;
+            position: absolute;
+            background: #f2f2f2;
+            top: 80px;
+            right: 80px;
+        }
+        #container {
+            background: white;
+            width: 800px;
+            /*TOP DIRETIA => 10px BAIXO ESQUERDA => CENTRALIZA AO MEIO*/
+            margin: 10px auto;
+            padding: 20px;
+            position: relative;
+        }
+        .fixo{
+            border: 1px solid red;
+            position: fixed;
+            background: #f2f2f2;
+            right: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Posicionamento Absoluto e Fixo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+        <p class="absolute">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+        <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+        <p class="fixo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+        <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+        <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+        <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+        <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum, aspernatur expedita accusamus
+            sapiente perferendis, laborum cumque magnam voluptate quia tempora dolorum autem consequatur soluta iure! Ea
+            labore consectetur voluptatem?
+        </p>
+
+    </div>
+</body>
+
+</html>

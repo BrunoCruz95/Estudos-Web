@@ -1,0 +1,50 @@
+/* SELETORES */
+body{
+    /* COR DE FUNDO & A IMGAGEM DE FUNDO */
+    background: #d2d2c1 url('../img/fundo.png');
+    /* TAMANHO DA FONTE, ESTILO DA FONTE */
+    font: 16px Arial, Helvetica, sans-serif;
+}
+a{
+    /*COR DO LINK*/
+    color: #4b566a;
+    /*REMOVENDO O _ DO LINK*/
+    text-decoration: none;
+    border:1px;
+    padding: 15px;
+}
+h1{
+    color: gray;
+}
+h3{
+    color: rgb(98, 94, 94);
+}
+
+/* ID */
+#principal{
+    /*BORDA*/
+    border: 1px;
+    /*LARGURA*/
+    width: 900px;
+}
+#menu{
+    /*COR DE FUNDO*/
+    background: #c5c5b2;
+    /*BORDA*/
+    border: 1px;
+    /*APLICA UM ESPAÇAMENTO INTERNO*/
+    padding: 18px;
+}
+#conteudo{
+    background: #e8e8d9;
+    padding: 15px;
+}
+
+/*CLASSES*/
+.centralizar{
+    /*CENTRALIZA*/
+    text-align: center;
+}
+.img-campanha{
+    border:10px solid #c3c3ae;
+}
